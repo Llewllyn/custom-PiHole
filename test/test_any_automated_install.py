@@ -1102,7 +1102,7 @@ def test_package_manager_has_installer_deps(host):
     install_dependent_packages ${INSTALLER_DEPS[@]}
     ''')
 
-    assert 'No package' not in output.stdout  # centos7 still exits 0...
+    assert 'No package' not in output.stdout
     assert output.rc == 0
 
 
@@ -1112,11 +1112,10 @@ def test_package_manager_has_pihole_deps(host):
     output = host.run('''
     source /opt/pihole/basic-install.sh
     package_manager_detect
-    select_rpm_php
     install_dependent_packages ${PIHOLE_DEPS[@]}
     ''')
 
-    assert 'No package' not in output.stdout  # centos7 still exits 0...
+    assert 'No package' not in output.stdout
     assert output.rc == 0
 
 
@@ -1126,9 +1125,8 @@ def test_package_manager_has_web_deps(host):
     output = host.run('''
     source /opt/pihole/basic-install.sh
     package_manager_detect
-    select_rpm_php
     install_dependent_packages ${PIHOLE_WEB_DEPS[@]}
     ''')
 
-    assert 'No package' not in output.stdout  # centos7 still exits 0...
+    assert 'No package' not in output.stdout
     assert output.rc == 0
