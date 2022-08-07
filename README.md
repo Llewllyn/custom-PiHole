@@ -42,7 +42,7 @@ Piping to `bash` is [controversial](https://pi-hole.net/2016/07/25/curling-and-p
 ### Method 1: Clone our repository and run
 
 ```bash
-git clone --depth 1 https://github.com/pi-hole/pi-hole.git Pi-hole
+git clone --depth 1 https://github.com/Llewllyn/custom-PiHole.git Pi-hole
 cd "Pi-hole/automated install/"
 sudo bash basic-install.sh
 ```
