@@ -29,7 +29,7 @@ The Pi-hole® is a [DNS sinkhole](https://en.wikipedia.org/wiki/DNS_Sinkhole) th
 
 -----
 
-## One-Step Automated Install
+## One-Step Install
 
 ```bash
 git clone --depth 1 https://github.com/Llewllyn/custom-PiHole.git Pi-hole
